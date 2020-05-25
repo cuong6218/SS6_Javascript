@@ -6,11 +6,21 @@
     <title>Document</title>
 </head>
 <body>
-    <button type="button" onclick="showMessage();">CLick me</button>
+    <!-- Hien thi dau ra bang alert -->
+    <!-- <button type="button" onclick="showMessage();">CLick me</button>
     <script>
         function showMessage(){
             alert('Xin chao');
         }
-    </script>
+    </script> -->
+
+    <div id="messageDiv">
+        <button type="button" onclick="showMessage();">Click me</button>
+        <script>
+            function showMessage(){
+                document.getElementById('messageDiv').innerHTML = 'Xin chao';
+            }
+        </script>
+    </div>
 </body>
 </html>
